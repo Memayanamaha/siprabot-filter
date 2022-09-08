@@ -748,6 +748,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+S2gp1wzMtdFjNjI9'),
+            InlineKeyboardButton('❤️ donate ❤️', url='https://t.me/+sJkohzBttKAwNDll'),
             InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sipramovieschannel')
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
