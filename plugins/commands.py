@@ -38,16 +38,28 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [[
+        buttons =[[
+
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+
             ],[
+
             InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+S2gp1wzMtdFjNjI9'),
+
+            InlineKeyboardButton('❤️ donate ❤️', url='https://t.me/+sJkohzBttKAwNDll'),
+
             InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sipramovieschannel')
+
             ],[      
+
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+
             ],[
+
             InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCxlIqe8ps19tmHMflj7NdCQ')
+
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -81,16 +93,28 @@ async def start(client, message):
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons = [[
+        buttons =[[
+
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+
             ],[
+
             InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+S2gp1wzMtdFjNjI9'),
+
+            InlineKeyboardButton('❤️ donate ❤️', url='https://t.me/+sJkohzBttKAwNDll'),
+
             InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sipramovieschannel')
+
             ],[      
+
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+
             ],[
+
             InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCxlIqe8ps19tmHMflj7NdCQ')
+
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
